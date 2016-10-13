@@ -1,5 +1,8 @@
-###Common Algorithms and Exercises
+###Common Algorithms, Exercises and Notes
 - - -
+* [**Data Structures**](#data-structure)
+	* [Array](#----environment)
+	* [Linked Lists](#----environment)
+* [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
 
-1. [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
-2. reserve for Later use
+
