@@ -6,7 +6,7 @@
 
 [practice from here](https://github.com/jwasham/google-interview-university#arrays)
 
-- [ ] Implement a vector (mutable array with automatic resizing):
+- [x] Implement a vector (mutable array with automatic resizing):
 	- [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
 	- [ ] new raw data array with allocated memory
      - can allocate int array under the hood, just not use its features
@@ -38,6 +38,7 @@
 		vector intialized
 		size: 0, capacity: 16, is_empty(): 0
 		traverse:
+		
 		After push 200 random number between 0 - 100
 		size: 200, capacity: 256, is_empty(): 200
 		traverse:
@@ -64,13 +65,12 @@
 		After pop 100 number
 		size: 100, capacity: 256, is_empty(): 100
 		traverse:
-        
 		81	90	52	51	15	26	55	29	48	99	75	
 		34	36	74	16	13	35	4	58	23	51	
 		92	91	48	85	61	66	6	91	57	13	
 		24	47	65	75	62	91	83	91	92	34	
 		66	78	70	93	94	83	80	51	94	3	
-		2 	86	47	2	72	 8     20	30	52	77	
+		2	86	47	2	72	8	20	30	52	77	
 		43	76	25	60	4	39	52	39	31	44	
 		73	49	74	43	94	69	79	74	72	73	
 		30	26	11	77	80	35	37	0	65	41	
