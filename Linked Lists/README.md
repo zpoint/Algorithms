@@ -1,6 +1,6 @@
 ###Practice
 * [Linked Lists](#linked-lists)
-* [my Double(single the same) Linked Lists implementation](https://github.com/zpoint/Algorithms/blob/master/Array/vector.c)
+* [my Double(single the same) Linked Lists implementation](https://github.com/zpoint/Algorithms/blob/master/Linked%20Lists/list.c)
 * [test result](#results)
 
 ####Linked Lists
