@@ -2,7 +2,6 @@
 #include <string.h>
 #include <stdio.h>
 #include <time.h>
-#include <stdlib.h>
 
 #define SIZE 16 // initial size
 typedef int msize_t; // my size
