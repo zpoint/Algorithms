@@ -6,6 +6,7 @@
 	* [Stacks & queue](https://github.com/zpoint/Algorithms/tree/master/Stack_Queue)
 * **Sort**
 	* [Bubble Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/bubble%20sort)
+	* [Insertion Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/insertion%20sort)
 * [**Dynamic Programming**](https://github.com/zpoint/Algorithms/tree/master/Dynamic%20Programming)
 * [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
 
