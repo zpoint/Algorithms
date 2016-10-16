@@ -5,23 +5,18 @@
 
 void insertion_sort(int *arr, int size)
 {
-		int tmp;
+		int tmp, j;
 		if (size > 1)
 		{
 				for (int i = 1; i < size; i++)
 				{
-						for (int j = 0; j < i; j++)
+						j = i - 1;
+						while (arr[j] > arr[j + 1] && j >= 0)
 						{
-								if (arr[j] > arr[i])
-								{
-										tmp = arr[i];
-										for (int k = i; k > j; k--)
-										{
-												arr[k] = arr[k - 1];
-										}
-										arr[j] = tmp;
-										break;
-								}
+								tmp = arr[j];
+								arr[j] = arr[j + 1];
+								arr[j + 1] = tmp;
+								--j;
 						}
 				}
 		}
