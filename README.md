@@ -9,6 +9,7 @@
 	* [Insertion Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/insertion%20sort)
 	* [Merge Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/merge%20sort)
 	* [Quick Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort)
+	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
 * [**Dynamic Programming**](https://github.com/zpoint/Algorithms/tree/master/Dynamic%20Programming)
 * [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
 
