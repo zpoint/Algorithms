@@ -60,8 +60,8 @@ int main(void)
 		int result;
 		struct timeb ts1, ts2;
 		ftime(&ts1);
-		char *a = "Oh my gooiidood";
-		char *b = "hh mv gooioeoid";
+		char *a = "yeap yyy";
+		char *b = "yyy ye";
 		printf("\n\t\t%s\n\t\t%s\n\t\tCalling editDistanceRecursive:\n\t\t", a, b);
 		result = editDistanceRecursive(a, b, strlen(a), strlen(b));
 		ftime(&ts2);
