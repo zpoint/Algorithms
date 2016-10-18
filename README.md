@@ -11,6 +11,9 @@
 	* [Quick Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort)
 	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
 * [**Dynamic Programming**](https://github.com/zpoint/Algorithms/tree/master/Dynamic%20Programming)
+	* Pascal's Triangle
+	* Edit Distance
+	* RNA secondary structure
 * [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
 
 

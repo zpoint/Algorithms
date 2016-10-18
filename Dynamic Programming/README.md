@@ -2,7 +2,7 @@
 - [x] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
 	* [Pascal's Triangle](#pascal's-triangle)
 - [Edit Distance](#edit-distance)
-- [RNA_secondary_structure](#rna-secondary=structure)
+- [RNA_secondary_structure](#rna-secondary-structure)
 
 
 
@@ -72,12 +72,23 @@
 * #####Result in C
 	
     	$./a.out
-		Oh my gooiidood
-		hh mv gooioeoid
-		Calling editDistanceRecursive:
-		Result: 5, Cost: 232.185000 seconds
-		Calling Dynamic Programming editDistance:
-		result: 5, Cost: 0.000000 seconds
+		ACCGGUAGUCGGAT
+		 1:  0  0  0  0  0  1  1  1  2  2  2  2  2  2 
+		 2:  0  0  0  0  0  0  0  1  1  1  2  3  3  3 
+		 3:  0  0  0  0  0  0  0  1  1  1  2  3  3  3 
+		 4:  0  0  0  0  0  0  0  0  0  1  1  1  1  1 
+		 5:  0  0  0  0  0  0  0  0  0  1  1  1  1  1 
+		 6:  0  0  0  0  0  0  0  0  0  0  0  0  1  1 
+		 7:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		 8:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		 9:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		10:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		11:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		12:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		13:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		14:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
+		
+		     1  2  3  4  5  6  7  8  9 10 11 12 13 14 
 - - -
 
 
