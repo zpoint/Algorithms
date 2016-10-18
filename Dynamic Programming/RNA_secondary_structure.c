@@ -33,11 +33,12 @@ int ismatch(char a, char b)
 
 int look_up(int **matrix, int start, int stop)
 {
-		int max = 0;
+		int max = 0, sum;
 		for (int k = start + 1; k < stop; k++)
 		{
-				if (*(*(matrix + start) + k) > max)
-						max = *(*(matrix + start) + k);
+				sum = *(*(matrix + start) + k - 1) + *(*(matrix + k + 1) + stop);
+				if (sum > max)
+						max = sum;
 		}
 		return max;
 }
