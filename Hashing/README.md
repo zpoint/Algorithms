@@ -19,6 +19,6 @@
 	* #####Result in C
 
 
-		$./a.out
-		result: 982, Took 0.000000 seconds
-		result: 982, Took 0.000000 seconds
+			$./a.out
+			result: 982, Took 0.000000 seconds
+            result: 982, Took 0.000000 seconds
