@@ -10,6 +10,9 @@
 	* [Merge Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/merge%20sort)
 	* [Quick Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort)
 	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
+* [**Prime number**](https://github.com/zpoint/Algorithms/tree/master/prime)
+* [**Hashing**](https://github.com/zpoint/Algorithms/tree/master/Hashing)
+	* Rolling hash ADT(Karp-Rabin algorithm)
 * [**Dynamic Programming**](https://github.com/zpoint/Algorithms/tree/master/Dynamic%20Programming)
 	* Pascal's Triangle
 	* Edit Distance
