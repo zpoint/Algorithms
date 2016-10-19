@@ -30,7 +30,7 @@ int editDistanceRecursive(char *arra, char *arrb, int asize, int bsize)
 
 int editDistance(char *arra, char *arrb, int asize, int bsize)
 {
-		int return_val, prev;
+		int return_val, curr;
 		int **matrix = malloc(sizeof(int *) * (asize + 1));
 		for (int i = 0; i <= asize; i++)
 		{
@@ -45,10 +45,10 @@ int editDistance(char *arra, char *arrb, int asize, int bsize)
 				for (int j = 1; j <= bsize; j++)
 				{
 						if (arra[i - 1] == arrb[j - 1])
-								prev = 0;
+								curr = 0;
 						else
-								prev = 1;
-						*(*(matrix + i) + j) = min(*(*(matrix + i) + j) + prev,
+								curr = 1;
+						*(*(matrix + i) + j) = min(*(*(matrix + i - 1) + j - 1) + curr,
 												   *(*(matrix + i - 1) + j) + 1,
 												   *(*(matrix + i) + j -1) + 1);
 				}
@@ -60,15 +60,15 @@ int main(void)
 		int result;
 		struct timeb ts1, ts2;
 		ftime(&ts1);
-		char *a = "yeap yyy";
-		char *b = "yyy ye";
+		char *a = "Oh my gooiidood";
+		char *b = "hh mv gooioeoid";
 		printf("\n\t\t%s\n\t\t%s\n\t\tCalling editDistanceRecursive:\n\t\t", a, b);
 		result = editDistanceRecursive(a, b, strlen(a), strlen(b));
 		ftime(&ts2);
 		printf("Result: %d, Cost: %lf seconds\n\t\t", result, (double)((ts2.time - ts1.time) * 1000 + (ts2.millitm - ts1.millitm)) / 1000.0);
 		printf("Calling Dynamic Programming editDistance:\n\t\t");
 		ftime(&ts1);
-		editDistance(a, b, strlen(a), strlen(b));
+		result = editDistance(a, b, strlen(a), strlen(b));
 		ftime(&ts2);
 		printf("result: %d, Cost: %lf seconds\n", result, (double)((ts2.time - ts1.time) * 1000 + (ts2.millitm - ts1.millitm)) / 1000.0);
 		return(0);

@@ -1,5 +1,11 @@
 import time
 
+def pr_matrix(matrix):
+    for i in matrix:
+        for j in i:
+            print("%2d " % j, end="")
+        print("")
+
 def editDistanceRecursive(a, b):
     if len(a) == 0:
         return len(b)
@@ -24,6 +30,7 @@ def editDistance(a, b):
             vert = matrix[i -1][j] + 1
             distdlg = matrix[i - 1][j - 1] if a[i - 1] == b[j - 1] else matrix[i -1][j - 1] + 1
             matrix[i][j] = min(horize, vert, distdlg)
+    #pr_matrix(matrix)
     return matrix[-1][-1]
 
 
