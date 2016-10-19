@@ -7,8 +7,8 @@
 
 
 * #####Karp-Rabin algorithm
-	* [Implementation in C](https://github.com/zpoint/Algorithms/tree/master/hashing/KR_string.c)
-	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/hashing/KR_string.py)
+	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Hashing/KR_string.c)
+	* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Hashing/KR_string.py)
 	* [Result](#result-in-c)
 
 	* #####Hint
@@ -17,6 +17,8 @@
 
 
 	* #####Result in C
+
+
 		$./a.out
 		result: 982, Took 0.000000 seconds
 		result: 982, Took 0.000000 seconds
