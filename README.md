@@ -4,6 +4,10 @@
 	* [Array](https://github.com/zpoint/Algorithms/tree/master/Array)
 	* [Linked Lists](https://github.com/zpoint/Algorithms/tree/master/Linked%20Lists)
 	* [Stacks & queue](https://github.com/zpoint/Algorithms/tree/master/Stack_Queue)
+	* Tree
+		*  [Binary Search Tree](https://github.com/zpoint/Algorithms/tree/master/Tree/BST)
+* [**Bitwise Operation**](https://github.com/zpoint/Algorithms/tree/master/bitwise)
+	* count bit
 * **Sort**
 	* [Bubble Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/bubble%20sort)
 	* [Insertion Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/insertion%20sort)
