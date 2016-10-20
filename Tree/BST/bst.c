@@ -136,7 +136,7 @@ struct Search_t search(node_t *tree, val_t value)
 		while (tree != NULL)
 		{
 				curr_val = getvalue(tree);
-				if (value = curr_val)
+				if (value == curr_val)
 						{ result.parent = parent; result.curr = tree; return(result);}
 				else if (value < curr_val)
 						{ parent = tree; tree = getleft(tree);}
@@ -159,7 +159,7 @@ struct Search_t successor(node_t *tree)
 		{
 				succ = tree; 
 				tree = getleft(tree); 
-				if (getleft(tree) != NULL)
+				if (tree != NULL && getleft(tree) != NULL)
 						parent = succ;
 			
 		}
@@ -178,7 +178,9 @@ val_t delete(node_t *tree, val_t value)
 				return(-1);
 		parent = result.parent;
 		del_val = getvalue(delnode);
-		if ((left = getleft(delnode)) == NULL && (right = getright(delnode)) == NULL)
+		left = getleft(delnode);
+		right = getright(delnode);
+		if (left == NULL && right == NULL)
 		{
 				if (getleft(parent) == delnode)
 						parent->left = NULL;
@@ -188,6 +190,7 @@ val_t delete(node_t *tree, val_t value)
 		}
 		else if (!(left != NULL && right != NULL)) // one child
 		{
+
 				if (left != NULL)
 						parent->left = left;
 				else
@@ -279,6 +282,10 @@ int main(int argc, char *argv[])
 		insert(tree, 3);
 		insert(tree, 2);
 		insert(tree, 1);
+		delete(tree, 1);
+		delete(tree, 15);
+		insert(tree, 1);
+		insert(tree, 15);
 		printf("preorder_traversal:");
 		preorder_traversal(tree);
 		printf("\npostorder_traversal:");
