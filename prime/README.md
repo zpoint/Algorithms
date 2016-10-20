@@ -1,7 +1,7 @@
 * ####Eratosthenes's Seive
 	* [Video](https://www.youtube.com/watch?v=veZShPR82oc)
-	* [Implementation in C](https://github.com/zpoint/Algorithms/tree/master/prime/find_prime.c)
-	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/Sort/find_prime.py)
+	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/prime/find_prime.c)
+	* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/prime/find_prime.py)
 	* [Result](#result-in-c)
 
 * #####Result in C

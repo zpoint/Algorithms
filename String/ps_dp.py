@@ -17,6 +17,6 @@ def palindrome_substring(string):
 
 
 if __name__ == "__main__":
-    palindrome_substring("BANANA")
+    palindrome_substring("11221")
 
 

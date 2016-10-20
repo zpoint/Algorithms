@@ -12,6 +12,8 @@
 	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
 * [**String Problem**](https://github.com/zpoint/Algorithms/tree/master/String)
 	* Longest Palindrome Substring String
+		* Dynamic Programming (O(n^2))
+		* maracher's Algorithms (O(n))
 * [**Prime number**](https://github.com/zpoint/Algorithms/tree/master/prime)
 * [**Hashing**](https://github.com/zpoint/Algorithms/tree/master/Hashing)
 	* Rolling hash ADT(Karp-Rabin algorithm)
@@ -19,6 +21,7 @@
 	* Pascal's Triangle
 	* Edit Distance
 	* RNA secondary structure
+	* LCS (longest commin subsequence)
 * [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
 
 
