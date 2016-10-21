@@ -1,8 +1,9 @@
 * ####String
-    - [Longest Palindrome Substring String](#palindrome-string)
-    	- [Dynamic Programming (O(n^2))](#dynamic-programming)
-    	- [maracher's Algorithms (O(n)) (Unsolved)](#maracher's-algorithm)
-	- [Longest Common Substring (Dynamic Programming)](#longest-common-substring)
+
+    * [Longest Palindrome Substring String](#palindrome-string)
+    	* [Dynamic Programming (O(n^2))](#dynamic-programming)
+    	* [maracher's Algorithms (O(n)) (Unsolved)](#maracher's-algorithm)
+	* [Longest Common Substring (Dynamic Programming)](#longest-common-substring)
 
 
 
@@ -13,6 +14,8 @@
 		* [Video](https://www.youtube.com/watch?v=obBdxeCx_Qs)
 		* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/ps_dp.c)
 		* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/String/ps_dp.py)
+		* hint
+		![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/lps.png)
 		* **Result**
 
 

@@ -27,3 +27,9 @@
 
 
 	* Result in Python3
+
+			python3 bst.py
+			preorder_traversal:	    5	3	2	1	10	15	
+			postorder_traversal:	1	2	3	15	10	5	
+			inorder_traversal:	    1	2	3	5	10	15	
+			levelorder_traversal:	5	3	10	2	15	1	
