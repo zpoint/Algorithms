@@ -151,6 +151,61 @@ class BST(object):
                 queue.append(node.right)
         print("")
 
+    def good(self):
+        print(self)
+
+    def height(self, outnode=None):
+        def helper(node):
+            if node == None:
+                return -1
+            return max(helper(node.left), helper(node.right)) + 1
+        if outnode == None:
+            outnode = self.root
+        return helper(outnode)
+
+    def depth(self, value):
+        node = self.root
+        dep = 0
+        while node != None:
+            if value == node.value:
+                return dep
+            elif value < node.value:
+                node = node.left
+                dep += 1
+            elif value > node.value:
+                node = node.right
+                dep += 1
+        return None
+
+    def node_count(self, outnode=None):
+        return self.height(outnode) - 1
+
+    def isbinarytree(self, outnode=None):
+        def check_node(node):
+            nonlocal pre
+            if node == None:
+                return True
+            elif pre < node.value:
+                pre = node.value
+                #print(pre)
+                return True
+            else:
+                return False
+        def helper(node):
+            if node != None:
+                if helper(node.left):
+                    if check_node(node):
+                        if helper(node.right):
+                            return True
+                return False
+            return True
+
+        pre = float("-inf")
+        node = self.root if outnode == None else outnode
+        return helper(node)
+
+
+
 
 if __name__ == "__main__":
     BSTtree = BST()
@@ -168,3 +223,4 @@ if __name__ == "__main__":
     BSTtree.postorder_traversal()
     BSTtree.inorder_traversal()
     BSTtree.levelorder_traversal()
+    print("BST.height(): %d\t BST.node_count(): %d\t BST.depth(15): %d BST.isbinarytree(): %d" % (BSTtree.height(), BSTtree.node_count(),BSTtree.depth(15), BSTtree.isbinarytree()))

@@ -31,6 +31,17 @@ typedef struct Queue_t
 }queue_t;
 
 queue_t *queue_global;
+int helper2_2(node_t *);
+
+int max(int a, int b)
+{
+		return(a > b ? a:b);
+}
+
+int min(int a, int b)
+{
+		return(a < b ? a:b);
+}
 
 queue_t *init_queue(void)
 {
@@ -265,9 +276,90 @@ void levelorder_traversal(node_t *tree)
 		}
 }
 
+int find_height(node_t *tree)
+{
+		// return the count of edges to the leaf
+		if (tree == NULL)
+				return(-1);
+		return(max(find_height(tree->left), find_height(tree->right)) + 1);
+}
+
+int find_node(node_t *tree)
+{
+		return(find_height(tree) - 1);
+}
+
+int depth_helper(node_t *node, val_t value, int depth)
+{
+		if (node == NULL)
+				return(-1);
+		if (getvalue(node) == value)
+				return(depth);
+		return(max(depth_helper(getleft(node), value, depth+1), depth_helper(getright(node), value, depth+1)));
+}
+
+
+int find_depth(node_t *tree, val_t value)
+{
+		return(depth_helper(tree, value, 0));
+}
+
+int isbinaryhelper(node_t *node, val_t min_val, val_t max_val)
+{
+		if (node == NULL)
+				return(1);
+		if (getvalue(node) > min_val && getvalue(node) < max_val)
+				return(min(isbinaryhelper(getleft(node), min_val, getvalue(node)), isbinaryhelper(getright(node), getvalue(node), max_val)));
+		return(-1);
+}
+
+int isbinaryhelper2_inorderhelper(node_t *node)
+{
+		// must be called from isbinarthelper2, or error will occur
+		static val_t prev = 1 << 31;
+		if (getvalue(node) <= prev)
+				return(-1);
+		prev = getvalue(node);
+		return(1);
+}
+
+int isbinarytree2(node_t *node)
+{
+		if (node != NULL)
+		{
+				if (isbinarytree2(getleft(node)) > 0)
+						if (isbinaryhelper2_inorderhelper(node) > 0)
+							if (isbinarytree2(getright(node)) > 0)
+									return(1);
+				return(-1);
+		}
+		return(1);
+}
+
+
+
+
+int isbinarytree(node_t *tree)
+{
+		return(isbinaryhelper(tree, 1<<31, 1<<31 ^ -1));
+}
+
+void delete_tree(node_t *tree)
+{
+		if (tree != NULL)
+		{
+				delete_tree(getleft(tree));
+				delete_tree(getright(tree));
+				free(tree);
+		}
+}
+
+
+
 int main(int argc, char *argv[])
 {
-		/* 5
+		/* 
+		   5
 		 /  \
 		3   10
 	   /     \
@@ -295,5 +387,6 @@ int main(int argc, char *argv[])
 		printf("\nlevelorder_traversal:");
 		levelorder_traversal(tree);
 		printf("\n");
+		printf("Height: %d, node: %d depth of 15: %d isbinarytree(tree): %d, %d\n", find_height(tree), find_node(tree), find_depth(tree, 15), isbinarytree(tree), isbinarytree2(tree));
 		return(0);
 }
