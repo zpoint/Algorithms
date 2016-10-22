@@ -6,6 +6,7 @@
 	* [Stacks & queue](https://github.com/zpoint/Algorithms/tree/master/Stack_Queue)
 	* Tree
 		*  [Binary Search Tree](https://github.com/zpoint/Algorithms/tree/master/Tree/BST)
+		*  [Trie](https://github.com/zpoint/Algorithms/tree/master/Tree/Trie)
 * [**Bitwise Operation**](https://github.com/zpoint/Algorithms/tree/master/bitwise)
 	* count bit
 * **Sort**
