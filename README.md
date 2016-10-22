@@ -17,7 +17,8 @@
 	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
 * [**Prime number**](https://github.com/zpoint/Algorithms/tree/master/prime)
 * [**Hashing**](https://github.com/zpoint/Algorithms/tree/master/Hashing)
-	* Rolling hash ADT(Karp-Rabin algorithm)
+ 	* Hash Map
+ 	* Rolling hash ADT(Karp-Rabin algorithm)
 * [**String Problem**](https://github.com/zpoint/Algorithms/tree/master/String)
 	* Longest Palindrome Substring String
 		* Dynamic Programming (O(n^2))
