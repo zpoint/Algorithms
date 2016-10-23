@@ -15,6 +15,7 @@
 	* [Merge Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/merge%20sort)
 	* [Quick Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort)
 	* [Selection Sort](https://github.com/zpoint/Algorithms/tree/master/Sort/selection%20sort)
+	* [Binary Heap](https://github.com/zpoint/Algorithms/tree/master/Sort/binary%20heap)
 * [**Prime number**](https://github.com/zpoint/Algorithms/tree/master/prime)
 * [**Hashing**](https://github.com/zpoint/Algorithms/tree/master/Hashing)
  	* Hash Map

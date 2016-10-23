@@ -1,7 +1,7 @@
 * ####Hashing
     - [x] [Hashing with Chaining (video)](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
     - [x] [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-    * [x] [Hash Map](#hash-map)
+    * [Hash Map](#hash-map)
 	* [Rolling hash ADT(Karp-Rabin algorithm)](#karp-rabin-algorithm)
 		* Implementation
 		* Result
