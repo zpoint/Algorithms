@@ -1,7 +1,7 @@
 * ####Binary Heap
 	* [Binary Heap video](https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees)
-	* [Implementation in C](https://github.com/zpoint/Algorithms/tree/master/Sort/binary%20heap/heap_sort.c)
-	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/Sort/merge%20sort/heap_sort.py)
+	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Sort/binary%20heap/binary_heap.c)
+	* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Sort/binary%20heap/binary_heap.py)
 	* [Result](#result-in-c)
 
 

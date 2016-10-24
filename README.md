@@ -25,6 +25,7 @@
 		* Dynamic Programming (O(n^2))
 		* maracher's Algorithms (O(n))
 	* Longest Common Substring (Dynamic Programming)
+	* Knuth–Morris–Pratt Algorithm(Substring O(n+m))
 * [**Dynamic Programming**](https://github.com/zpoint/Algorithms/tree/master/Dynamic%20Programming)
 	* Pascal's Triangle
 	* Edit Distance

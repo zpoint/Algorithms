@@ -4,6 +4,7 @@
     	* [Dynamic Programming (O(n^2))](#dynamic-programming)
     	* [maracher's Algorithms (O(n)) (Unsolved)](#maracher's-algorithm)
 	* [Longest Common Substring (Dynamic Programming)](#longest-common-substring)
+	* [Knuth–Morris–Pratt Algorithm](#knuth–morris-pratt-algorithm)
 
 
 
@@ -62,3 +63,31 @@
  			stringB:	87654321
  			lsctring:	87654321
  			length:	    8
+
+
+- - -
+
+* #####Knuth–Morris–Pratt algorithm
+	* [KMP Full Video](https://www.youtube.com/watch?annotation_id=annotation_109280825&feature=iv&src_vid=KG44VoDtsAA&v=GTJr8OvyEVQ)
+	* [KMP PreFix Array Logic](https://www.youtube.com/watch?v=KG44VoDtsAA)
+	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/kmp.c)
+	* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/String/kmp.py)
+
+
+	* **hint**
+
+    ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/kmp.png)
+
+
+	* Result in C
+
+			a: abxabcabcabyxxabcabyj, b: abcaby
+			match in index: 6
+			match in index: 14
+
+
+	* Result in Python
+
+			a: banana, b: ana
+			match_index: 1
+			match_index: 3
