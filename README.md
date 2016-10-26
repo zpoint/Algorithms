@@ -7,6 +7,7 @@
 	* Tree
 		*  [Binary Search Tree](https://github.com/zpoint/Algorithms/tree/master/Tree/BST)
 		*  [Trie](https://github.com/zpoint/Algorithms/tree/master/Tree/Trie)
+		*  [AVL](https://github.com/zpoint/Algorithms/tree/master/Tree/AVL)
 * [**Bitwise Operation**](https://github.com/zpoint/Algorithms/tree/master/bitwise)
 	* count bit
 * **Sort**
