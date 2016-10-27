@@ -9,6 +9,7 @@
 		*  [Trie](https://github.com/zpoint/Algorithms/tree/master/Tree/Trie)
 		*  [AVL](https://github.com/zpoint/Algorithms/tree/master/Tree/AVL)
 		*  [Btree](https://github.com/zpoint/Algorithms/tree/master/Tree/Btree)
+		*  [Red Black Tree](https://github.com/zpoint/Algorithms/tree/master/Tree/RBTree)
 * [**Bitwise Operation**](https://github.com/zpoint/Algorithms/tree/master/bitwise)
 	* count bit
 * **Sort**
