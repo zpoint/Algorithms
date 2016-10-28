@@ -5,8 +5,8 @@
 	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/Tree/RBTree/rbt.py)
 	* Hint
 
-	![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/rbinsert.png)
-    ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/rbdelete.png)
+	![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/rbtinsert.png)
+    ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/rbtdelete.png)
 
 	* Result in C
 
