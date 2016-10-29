@@ -203,10 +203,69 @@ int getcolor(node_t *node)
 	return(RED);
 }
 
+int double_black_fix(tree_t *tree, node_t *node)
+{
+		// Double black situation, node must be node's parent's left
+		// node's parent's child is NIL, But node isn't
+		
+		// case 1
+		if (node == tree->root)
+				return(1);
+		node_t *sibling = node->parent->right;
+		if (getcolor(node->parent) == BLACK)
+		{
+				if (getcolor(sibling) == RED && getcolor(sibling->left) == BLACK && getcolor(sibling->right) == BLACK)
+				{
+						// case 2
+						node->parent->color = RED;
+						sibling->color = BLACK;
+						left_rotate(tree, node->parent, sibling);
+						return(double_black_fix(tree, node));
+				}
+				else if (getcolor(sibling) == BLACK && getcolor(sibling->left) == BLACK && getcolor(sibling->right) == BLACK)
+				{
+						//case 3
+						sibling->color = RED;
+						return(double_black_fix(tree, node->parent));
+				}
+				else if (getcolor(sibling) == BLACK && getcolor(sibling->left) == RED && getcolor(sibling->right) == BLACK)
+				{
+						//case 5
+						sibling->color = RED;
+						sibling->left->color = BLACK;
+						right_rotate(tree, sibling, sibling->left);
+						return(double_black_fix(tree, node));
+				}
+		}
+		else if (getcolor(sibling) == BLACK && getcolor(sibling->left) == BLACK && getcolor(sibling->right) == BLACK)
+		{
+				// case 4
+				node->parent->color = BLACK;
+				sibling->color = RED;
+				return(1);
+		}
+		if (getcolor(sibling) == BLACK && getcolor(sibling->right) == RED)
+		{
+				// case 6???
+				sibling->color = node->parent->color;
+				node->parent->color = BLACK;
+				sibling->right->color == BLACK;
+				left_rotate(tree, node->parent, sibling);
+				return(1);
+		}
+		else
+				fprintf(stderr, "Error: node: %d\n", node->value);
+}
+
+
+
+
+
+
 int delete_helper(tree_t *tree, node_t *node)
 {
 	// Caller must make sure node is a node of tree
-	Node_t *succ;
+	node_t *succ;
 	if (node->left != NIL && node->right != NIL)
 	{
 		succ = successor(node);
@@ -266,34 +325,27 @@ int delete_helper(tree_t *tree, node_t *node)
 		}
 		else // double black situation:
 		{
-			if (node == tree->root) // case 1
-			{
-				if (node->left != NIL)
+				double_black_fix(tree, node);
+				if (node == tree->root)
 				{
-					tree->root = node->left;
-					node->left->parent = NIL;
+						if (node->left != NIL)
+						{
+								tree->root = node->left;
+								node->left->parent = NIL;
+						}
+						else if (node->right != NIL)
+						{
+								tree->root = node->right;
+								node->right->parent = NIL;
+						}
+						else 
+								tree->root = NIL;
 				}
-				else if (node->right != NIL)
-				{
-					tree->root = node->right;
-					node->right->parent = NIL;
-				}
-				else
-					tree->root = NIL;
+				node->parent->left = NIL;
 				free(node);
 				return(1);
-			}
-
-			node_t *sibling;
-			if (node == node->parent->left)
-				sibling = node->parent->right;
-			else
-				sibling = node->parent->left;
-			// use getcolor() functon to get color of node
-			if ()
 		}
 	}
-
 }
 
 int delete_node(tree_t *tree, val_t value)
@@ -351,6 +403,7 @@ int main(int argc, char *argv[])
 	insert(tree, 20);
 	insert(tree, 40);
 	insert(tree, 50);
+	//delete_node(tree, 10);
 	node_t *sibling = NIL;
 	node_t *node = tree->root->right;
 	middle_order_traversal(tree);
