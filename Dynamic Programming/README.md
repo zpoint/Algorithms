@@ -1,5 +1,5 @@
-####Practice and Notes
-
+###Practice and Notes
+---
 - [x] [Skiena: CSE373 2012 - Lecture 19 - Introduction to Dynamic Programming (video)](https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&t=1718)
 	* [Pascal's Triangle](#pascal's-triangle)
 - [Edit Distance](#edit-distance)
@@ -9,7 +9,7 @@
 
 
 #####Edit Distance
-
+---
 * [Edit Distance 1 (video)](https://www.youtube.com/watch?v=8Q2IEIY2pDU&index=33&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
 * [Edit Distance 2 (video)](https://www.youtube.com/watch?v=0KzWq118UNI&index=34&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
 * [Edit Distance 3 (video)](https://www.youtube.com/watch?v=Xg6uyW9Bscs&index=35&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
@@ -17,6 +17,7 @@
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/edit_distance.py)
 
 #####hint
+---
 
 * ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/ed.png)
 
@@ -40,7 +41,7 @@
 - - -
 
 #####RNA secondary structure
-
+---
 [RNA secondary structure (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem)
 * [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/RNA_secondary_structure.c)
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/RNA_secondary_structure.py)
@@ -92,20 +93,20 @@
 		14:  0  0  0  0  0  0  0  0  0  0  0  0  0  0 
 		
 		     1  2  3  4  5  6  7  8  9 10 11 12 13 14 
-- - -
 
 
 
-######Pascal's Triangle
 
+####Pascal's Triangle
+---
 [Implementation](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/pt.c)
 
 ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/pt.png)
 
 
-- - -
-#####LCS
 
+#####LCS
+---
 - [Video](https://www.youtube.com/watch?v=NnD96abizww)
 * [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/lcs.c)
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/lcs.py)
