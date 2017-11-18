@@ -8,16 +8,16 @@
 
 
 ---
-#####Edit Distance
+##### Edit Distance
 ---
 * [Edit Distance 1 (video)](https://www.youtube.com/watch?v=8Q2IEIY2pDU&index=33&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
 * [Edit Distance 2 (video)](https://www.youtube.com/watch?v=0KzWq118UNI&index=34&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
 * [Edit Distance 3 (video)](https://www.youtube.com/watch?v=Xg6uyW9Bscs&index=35&list=PL2mpR0RYFQsBiCWVJSvVAO3OJ2t7DzoHA)
 * [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/edit_distance.c)
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/edit_distance.py)
-
-#####hint
 ---
+##### hint
+
 
 * ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/ed.png)
 
@@ -40,8 +40,8 @@
 		result: 5, Cost: 0.000000 seconds
 - - -
 
-#####RNA secondary structure
----
+##### RNA secondary structure
+
 [RNA secondary structure (video)](https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem)
 * [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/RNA_secondary_structure.c)
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/RNA_secondary_structure.py)
@@ -96,17 +96,17 @@
 
 
 
-
-####Pascal's Triangle
 ---
+#### Pascal's Triangle
+
 [Implementation](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/pt.c)
 
 ![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/pt.png)
 
 
-
-#####LCS
 ---
+##### LCS
+
 - [Video](https://www.youtube.com/watch?v=NnD96abizww)
 * [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/lcs.c)
 * [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/Dynamic%20Programming/lcs.py)
@@ -138,3 +138,4 @@
 		0  1  2  3  3  3  4  5  5  5  
 		0  1  2  3  3  3  4  5  6  6  
 		Result:f  f  f  c  b  a  
+---
