@@ -1,4 +1,4 @@
-* #####Binary Search Tree
+* Binary Search Tree
 	* [Video week 5](https://www.coursera.org/learn/data-structures-optimizing-performance/home/week/5)
 	* [Implementation in C](https://github.com/zpoint/Algorithms/tree/master/Tree/BST/bst.c)
 	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/Tree/BST/bst.py)
