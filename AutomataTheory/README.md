@@ -31,3 +31,20 @@
 * NFA
 	* ![NFA graph](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/nfa.png)
 
+
+			gcc nfa.c
+            ./a.out
+            Please enter strings only contains 0, 1, I will match all string contain '01'
+            000
+            Not accepted
+            111
+            Not accepted
+            11110
+            Not accepted
+            01
+            Accepted
+            00010
+            Not accepted
+            00001
+            Accepted
+
