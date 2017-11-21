@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-enum INPUTS {ZERO, ONE};
-
 struct table
 {
 		size_t symbol_size;
@@ -21,9 +19,28 @@ struct table init_nfa_table()
 				table_entry[i] = (char **)malloc(sizeof(char **) * 2);
 				switch (i)
 				{
-
+						case 0: // A
+								table_entry[i][0] = "A";
+								table_entry[i][1] = "AB";
+								break;
+						case 1: // B
+								table_entry[i][0] = "C";
+								table_entry[i][1] = "C";
+								break;
+						case 2:// C
+								table_entry[i][0] = "~";
+								table_entry[i][1] = "~";
 				}
 		}
+		ndf_table.symbol_size = 3;
+		ndf_table.input_size = 2;
+		return ndf_table;
+}
+
+struct table to_dfa_table(struct table ndf_table)
+{
+		struct table dfa_table;
+
 }
 
 int main()
