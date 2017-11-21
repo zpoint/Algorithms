@@ -1,4 +1,4 @@
-###Common Algorithms, Exercises and Notes
+### Common Algorithms, Exercises and Notes
 - - -
 - * [**LeetCode OJ**](https://github.com/zpoint/Algorithms/tree/master/LeetCode)
 * [**Data Structures (my implementation & Notes)**](#data-structure)
