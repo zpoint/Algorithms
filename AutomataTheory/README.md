@@ -62,4 +62,19 @@
             ABC: |A,C| A,B,C| 
             AC: |A| A,B| 
 
+* Minimization DFA of Partitioning Method
+
+	* ![DFA graph](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/nfa2dfa.png)
+
+
+			python3 nfa2dfa.py
+            A: |A| A,B| 
+            B: |C| C| 
+            C: |~| ~| 
+
+            A: |A| A,B| 
+            AB: |A,C| A,B,C| 
+            ABC: |A,C| A,B,C| 
+            AC: |A| A,B| 
+
 
