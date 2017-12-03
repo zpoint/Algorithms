@@ -1,13 +1,23 @@
 import copy
+from collections import OrderedDict
 
 
 class Table(object):
     def __init__(self):
         self.states = list()
-        self.entry = dict()
+        self.entry = OrderedDict()
         self.inputs = list()
         self.begin_state = None
         self.end_state = None
+
+    def __str__(self):
+        ret_str = ""
+        for symbol in self.entry:
+            ret_str += symbol + ": |"
+            for i in self.entry[symbol]:
+                ret_str += ",".join(i) + "| "
+            ret_str += "\n"
+        return ret_str
 
 
 class DfaTable(Table):
@@ -33,8 +43,8 @@ class DfaTable(Table):
                 if not new_sets:
                     new_sets.append({state})
                     continue
-                same_partition = False
                 for new_each_set in new_sets:
+                    same_partition = True
                     new_set_state = None
                     for _ in new_each_set:
                         new_set_state = _
@@ -43,12 +53,12 @@ class DfaTable(Table):
                     for state_a, state_b in zip(states_a, states_b):
                         for each_set in states_sets:
                             if state_a in each_set:
-                                if state_b in each_set:
-                                    same_partition = True
+                                if state_b not in each_set:
+                                    same_partition = False
                                     break
                             elif state_b in each_set:
-                                if state_a in each_set:
-                                    same_partition = True
+                                if state_a not in each_set:
+                                    same_partition = False
                                     break
                     if same_partition:
                         new_each_set.add(state)
@@ -70,10 +80,46 @@ class DfaTable(Table):
         prev_sets.append(set_a)
         prev_sets.append(set_b)
         while True:
-            if curr_sets == prev_sets:
-                break
             # continue partition prev_set
-            curr_sets = self.partiton(prev_sets)
+            curr_sets = self.partition(prev_sets)
             if curr_sets == prev_sets:
                 break
             prev_sets = curr_sets
+        # combine states in same sets
+        new_table = Table()
+        new_table.inputs = copy.deepcopy(self.inputs)
+        output_node_map = dict()
+        for each_set in curr_sets:
+            node_name = "".join(each_set)
+            for node in each_set:
+                output_node_map[node] = node_name
+
+        dest_table = dict()
+        for each_set in curr_sets:
+            new_state = "".join(each_set)
+            for state in each_set:
+                dest_table[state] = new_state
+
+        for each_set in curr_sets:
+            new_state = "".join(each_set)
+            new_table.entry[new_state] = list()
+            one_state_in_each_set = None
+            for i in each_set:
+                one_state_in_each_set = i
+                break
+            for input_index in range(len(self.inputs)):
+                dest = dest_table[self.entry[one_state_in_each_set][input_index]]
+                new_table.entry[new_state].append(dest)
+
+            if self.begin_state in each_set:
+                new_table.begin_state = new_state
+            if self.end_state in each_set:
+                new_table.end_state = new_state
+        return new_table
+
+
+if __name__ == "__main__":
+    a = DfaTable()
+    print(a)
+    b = a.minimize_partition()
+    print(b)

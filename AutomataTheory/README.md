@@ -64,17 +64,19 @@
 
 * Minimization DFA of Partitioning Method
 
-	* ![DFA graph](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/nfa2dfa.png)
+	* ![DFA graph](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/min_dfa.png)
 
 
-			python3 nfa2dfa.py
-            A: |A| A,B| 
-            B: |C| C| 
-            C: |~| ~| 
+            python3 mindfa_partition.py 
+            A: |B| C| 
+            B: |B| D| 
+            C: |B| C| 
+            D: |B| E| 
+            E: |B| C| 
 
-            A: |A| A,B| 
-            AB: |A,C| A,B,C| 
-            ABC: |A,C| A,B,C| 
-            AC: |A| A,B| 
+            AC: |B| A,C| 
+            B: |B| D| 
+            D: |B| E| 
+            E: |B| A,C| 
 
 
