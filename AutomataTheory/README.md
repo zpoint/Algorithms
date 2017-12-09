@@ -64,7 +64,7 @@
 
 * Minimization DFA of Partitioning Method
 
-	* ![DFA graph](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/min_dfa.png)
+	* ![DFA graph Partitioning Method](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/min_dfa.png)
 
 
             python3 mindfa_partition.py 
@@ -78,5 +78,23 @@
             B: |B| D| 
             D: |B| E| 
             E: |B| A,C| 
+
+
+* Minimization DFA of Table Filling Method
+
+	* ![DFA graph Table Filling Method 1](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/nfa2dfa_tfm_1.jpg)
+	* ![DFA graph Table Filling Method 2](https://github.com/zpoint/Algorithms/blob/master/AutomataTheory/screenshots/nfa2dfa_tfm_2.jpg)
+
+            python3 mindfa_table_filling_method.py
+            A: |B| C| 
+            B: |A| D| 
+            C: |E| F| 
+            D: |E| F| 
+            E: |E| F| 
+            F: |F| F| 
+
+            BA: |B,A| E,C,D| 
+            ECD: |E,C,D| F| 
+            F: |F| F| 
 
 

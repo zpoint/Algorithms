@@ -45,10 +45,11 @@ class DfaTable(Table):
                 if pre_order in self.min_table or post_order in self.min_table:
                     continue
                 # step 2
-                if i in self.end_state or j in self.end_state:
+                if not (i in self.end_state and j in self.end_state) and (i in self.end_state or j in self.end_state):
                     self.min_table[pre_order] = True
                 else:
                     self.min_table[pre_order] = False
+
         # step 3
         need_repeat = True
         while need_repeat:
@@ -67,7 +68,6 @@ class DfaTable(Table):
                                 need_repeat = True
                             self.min_table[pair] = True
 
-        print(self.min_table)
         # combine all unmarked pairs
         need_combine_pair = set()
         combined_states = list()
@@ -76,15 +76,24 @@ class DfaTable(Table):
         new_table.inputs = copy.deepcopy(self.inputs)
         for pair in self.min_table:
             if not self.min_table[pair]:
-                need_combine_pair.append(pair)
+                need_combine_pair.add(pair)
         for pair in need_combine_pair:
             if not combined_states:
                 combined_states.append(list(pair))
                 continue
+            has_same_combined_state = False
+
             for each_combined_state in combined_states:
+                if has_same_combined_state:
+                    break
                 for state in pair:
                     if state in each_combined_state:
-                        each_combined_state.extend(list(state))
+                        each_combined_state.extend(list(pair))
+                        has_same_combined_state = True
+                        break
+            if not has_same_combined_state:
+                combined_states.append(list(pair))
+
         for i in range(len(combined_states)):
             combined_states[i] = set(combined_states[i])
         for states in combined_states:
@@ -95,7 +104,7 @@ class DfaTable(Table):
         for final_state_name in set(combined_state_map.values()):
             new_table.entry[final_state_name] = list()
             for input_index in range(len(new_table.inputs)):
-                new_table.entry[final_state_name].append(combined_state_map[final_state_name[0]])
+                new_table.entry[final_state_name].append(combined_state_map[self.entry[final_state_name[0]][input_index]])
         return new_table
 
 

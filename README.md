@@ -35,6 +35,12 @@
 	* Edit Distance
 	* RNA secondary structure
 	* LCS (longest common subsequence)
+* [**AutomataTheory**](https://github.com/zpoint/Algorithms/tree/master/AutomataTheory)
+	* DFA
+	* NFA
+	* Conversion of NFA to DFA
+	* Minimization of DFA
+		* Partitioning Method
+		* Table Filling Method
 * [**Implementation of some examples in << CLRS >>**](https://github.com/zpoint/Algorithms/tree/master/CLRS)
-
 
