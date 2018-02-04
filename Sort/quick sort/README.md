@@ -1,16 +1,16 @@
-* ####Quick Sort
-	* [Merge sort video](https://www.youtube.com/watch?v=y_G9BkAm6B8&index=4&list=PL89B61F78B552C1AB)
+* #### Quick Sort
+	* [Quick sort video](https://www.youtube.com/watch?v=y_G9BkAm6B8&index=4&list=PL89B61F78B552C1AB)
 	* [Implementation in C](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort/quick_sort.c)
 	* [Implementation in Python3](https://github.com/zpoint/Algorithms/tree/master/Sort/quick%20sort/quick_sort.py)
 	* [Result](#result-in-c)
 
 
-* #####Hint
+* ##### Hint
 
 	![image](https://github.com/zpoint/Algorithms/blob/master/screenshots/qs.svg)
 
 
-* #####Result in C
+* ##### Result in C
 
 		$./a.out
 		size: 150, After initialized

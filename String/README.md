@@ -1,4 +1,4 @@
-* ####String
+* #### String
 
     * [Longest Palindrome Substring String](#palindrome-string)
     	* [Dynamic Programming (O(n^2))](#dynamic-programming)
@@ -10,7 +10,7 @@
 
 - - -
 
-* #####Palindrome String
+* ##### Palindrome String
 	* ######**Dynamic Programming**
 		* [Video](https://www.youtube.com/watch?v=obBdxeCx_Qs)
 		* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/ps_dp.c)
@@ -34,14 +34,14 @@
                 	string: BANANA, maxsubstring: ANANA, len: 5
 
 
-	* ######**Maracher's Algorithm**
+	* ###### **Maracher's Algorithm**
 		* [Video](https://www.youtube.com/watch?v=V-sEwsca1ak)
 
 
 
 - - -
 
-* #####Longest Common Substring
+* ##### Longest Common Substring
 	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/lcstring.c)
 	* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/String/lcstring.py)
 
@@ -67,7 +67,7 @@
 
 - - -
 
-* #####Knuth–Morris–Pratt algorithm
+* ##### Knuth–Morris–Pratt algorithm
 	* [KMP Full Video](https://www.youtube.com/watch?annotation_id=annotation_109280825&feature=iv&src_vid=KG44VoDtsAA&v=GTJr8OvyEVQ)
 	* [KMP PreFix Array Logic](https://www.youtube.com/watch?v=KG44VoDtsAA)
 	* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/kmp.c)
