@@ -11,7 +11,7 @@
 - - -
 
 * ##### Palindrome String
-	* ######**Dynamic Programming**
+	* ###### **Dynamic Programming**
 		* [Video](https://www.youtube.com/watch?v=obBdxeCx_Qs)
 		* [Implementation in C](https://github.com/zpoint/Algorithms/blob/master/String/ps_dp.c)
 		* [Implementation in Python3](https://github.com/zpoint/Algorithms/blob/master/String/ps_dp.py)
