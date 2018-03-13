@@ -1,6 +1,6 @@
 ### Common Algorithms, Exercises and Notes
 - - -
-- * [**LeetCode OJ**](https://github.com/zpoint/Algorithms/tree/master/LeetCode)
+- * [**LeetCode Problems' Solutions**](https://github.com/zpoint/Algorithms/tree/master/LeetCode)
 * [**Data Structures (my implementation & Notes)**](#data-structure)
 	* [Array](https://github.com/zpoint/Algorithms/tree/master/Array)
 	* [Linked Lists](https://github.com/zpoint/Algorithms/tree/master/Linked%20Lists)
