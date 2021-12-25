@@ -1,35 +1,16 @@
+std::map<char, char> inverse_map{{')', '('}, {'}', '{'}, {']', '['}};
+
 class Solution {
 public:
     bool isValid(string s) {
-        int l1 = 0, l2 = 0, l3 = 0;
+        std::stack<char> stack;
         for (const auto& c : s) {
-            if (c == '(') {
-                ++l1;
-            } else if (c == '{') {
-                ++l2;
-            } else if (c == '[') {
-                ++l3;
-            } else if (c == ')') {
-                if (l1 <= 0) {
-                    return false;
-                }
-                --l1;
-            } else if (c == '}') {
-                if (l2 <= 0) {
-                    return false;
-                }
-                --l2;
-            } else if (c == ']') {
-                if (l3 <= 0) {
-                    return false;
-                }
-                --l3;
-            }
-            else {
-                return false;
+            if (!stack.empty() and (c == ')' or c == '}' or c == ']') and inverse_map[c] == stack.top()) {
+                stack.pop();
+            } else {
+                stack.push(c);
             }
         }
-        return l1 == 0 and l2 == 0 and l3 == 0;
-        
+        return stack.empty();
     }
 };
